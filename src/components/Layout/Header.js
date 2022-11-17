@@ -9,7 +9,7 @@ export default function Header(props) {
     <>
       <header className={classes.header}>
         <h1>Fake Restaurant</h1>
-        <HeaderCartButton/>
+        <HeaderCartButton onClick={props.onShowCartHeader}/>
       </header>
       <div className={classes['main-image']}>
         <img src={meal} alt='niestety'/>
